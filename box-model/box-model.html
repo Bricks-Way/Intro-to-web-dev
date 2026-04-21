@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="device-width-device, initial scale=1.0"><title>Box Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box;
+        }
+        body, html {
+            height: 100;
+        }
+        /*Grid container to fill the screen with gaps */
+        .grid-container {
+        display: grid;
+        grid-template-columns:repeat(3,1fr); /* Three columns */
+        grid-template-rows: repeat(3, 1fr); /* Three rows */
+        height: 100vh;
+        gap: 10px;
+        padding: 10;
+        }
+        .box {
+            border: 5px solid black;
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        /* Specific colors for each box */
+        .box1 {background-color: red;}
+        .box2 {background-color: blue;}
+        .box3{background-color: green;}
+        .box4{background-color: purple;}
+        .box5{background-color: black;}
+        .box6{background-color: orange;}
+        .box7{background-color: burlywood;}
+        .box8{background-color: mediumaquamarine;}
+        .box9{background-color: brown;}
+        
+
+    </style>
+    <body>
+        <div class="grid-container">
+        <div class="box box1"> Box 1</div>
+         <div class="box box2"> Box 2</div>
+          <div class="box box3"> Box 3</div>
+           <div class="box box4"> Box 4</div>
+            <div class="box box5"> Box 5</div>
+             <div class="box box6"> Box 6</div>
+              <div class="box box7"> Box 7</div>
+               <div class="box box8"> Box 8</div>
+                <div class="box box9"> Box 9</div>
+        </div>        
+    </body>
