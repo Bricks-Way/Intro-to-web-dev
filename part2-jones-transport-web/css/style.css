@@ -1,0 +1,108 @@
+/* --- GOOGLE FONTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* --- GLOBAL LAYOUT & RESET --- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* Base typography and brand colors */
+    background-color: #F4F4F4;
+    color: #1A2B4C; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- TYPOGRAPHY HIERARCHY --- */
+h1, h2, h3 {
+    /* Brand highlight color for headings */
+    color: #FF6600; 
+}
+/* --- HEADER & NAVIGATION --- */
+header {
+    display: flex; /* Aligns items horizontally */
+    justify-content: space-between; /* Pushes logo left, nav right */
+    align-items: center; /* Centers everything vertically */
+    padding: 15px 50px;
+    background-color: #ffffff;
+    border-bottom: 3px solid #FF6600; /* Subtle orange brand accent */
+}
+
+.logo {
+    height: 70px; /* Shrinks the logo to a professional size */
+    width: auto; /* Keeps the aspect ratio correct */
+}
+
+header nav ul {
+    display: flex; /* Makes the list go horizontal */
+    list-style: none; /* Removes the bullets */
+    gap: 30px; /* Adds space between menu items */
+    margin: 0;
+    padding: 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #1A2B4C; /* Navy blue brand color */
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+header nav a:hover {
+    color: #FF6600; /* Orange hover effect */
+}
+/* --- MAIN CONTENT CONTAINER --- */
+main {
+    max-width: 1000px; /* Keeps our text from stretching too wide */
+    margin: 20px auto; /* Centers the whole container on the screen */
+    padding: 20px;
+    background-color: #ffffff; /* Gives it a white "card" look */
+    border-radius: 8px; /* Adds a modern, soft edge */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft, professional drop shadow */
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #1A2B4C; /* Navy Blue */
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+/* --- INQUIRY FORM STYLING --- */
+.inquiry-section {
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.submit-btn {
+    background-color: #FF6600; /* Safety Orange */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #1A2B4C; /* Navy Blue hover effect */
+}
